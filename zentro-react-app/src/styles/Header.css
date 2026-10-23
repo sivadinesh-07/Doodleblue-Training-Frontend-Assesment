@@ -1,0 +1,148 @@
+
+.zentro-header {
+  background: #1b1f2a;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1200px;
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.brand-logo {
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-logo span {
+  color: #c2410c;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 460px;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: #1b1f2a;
+  background: transparent;
+}
+
+.header-search button {
+  border: none;
+  background: transparent;
+  color: #5b6170;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header-search button:hover {
+  color: #c2410c;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link,
+.cart-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f4a17f;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.cart-link:hover {
+  color: #f4a17f;
+}
+
+.cart-badge {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #c2410c;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .header-container {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .brand-logo {
+    font-size: 25px;
+  }
+
+  .header-nav {
+    gap: 14px;
+  }
+
+  .header-search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .header-container {
+    gap: 10px;
+  }
+
+  .header-nav {
+    gap: 10px;
+  }
+
+  .nav-link,
+  .cart-link {
+    font-size: 12px;
+  }
+}
